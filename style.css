@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    height: 750px;
+    width: 100%;
+   background-image: url(bg.jpg);
+   font-family: "Jersey 15", sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#box1{
+    width: 400px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 22px;
+    gap: 10px;
+    font-size: 48px;
+}
+#box2{
+    width: 700px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 48px;
+    
+}
+#box2 h2{
+    color: #BD0000;
+}
+#box3{
+    width: 400px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.btn{
+    width: 160px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 53px;
+    font-family: "Jersey 15", sans-serif;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: white;
+}
+#btn1{
+    background: linear-gradient(to bottom, #5CFF26, #7A6666);
+}
+#btn2{
+    background: linear-gradient(to bottom, #FFD500, #7A6666);
+}
+
+#board{
+   width: 540px;
+   height: 800px;
+   border-radius: 34px;
+   -webkit-border-radius: 34px;
+   -moz-border-radius: 34px;
+   -ms-border-radius: 34px;
+   -o-border-radius: 34px;
+   border: solid black 6px;
+   background: url(bg2.jpg);
+   background-size: cover;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#board div {
+    /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 150px; 
+    height: 113px;
+    background-image: url("pot.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#board div img {
+    /*allimgtagsinsidetiles*/width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transform:translateY(-70px) ;
+    -webkit-transform:translateY(-70px) ;
+    -moz-transform:translateY(-70px) ;
+    -ms-transform:translateY(-70px) ;
+    -o-transform:translateY(-70px) ;
+}
